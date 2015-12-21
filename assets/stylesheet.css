@@ -1,0 +1,156 @@
+* {
+    box-sizing: border-box;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+a {
+    color: #cb2665;
+    text-decoration: none;
+}
+
+body, html {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 100%;
+    padding: 0;
+    margin: 0;
+    background-color: #111;
+    color: #eee;
+    cursor: default;
+}
+
+.header {
+    text-align: center;
+    position: relative;
+    font-size: 5em;
+    margin: auto;
+    margin-top: 1.25em;
+    width: 100%;
+    font-weight: 100;
+}
+
+.body {
+    display: inline-block;
+}
+
+.message {
+    font-size: .28em;
+    color: #a9a9a9;
+    text-align: center;
+}
+
+.buttonwrap {
+    text-align: center;
+}
+
+.btn {
+    border-radius: .3em;
+    padding: 1em 1.5em;
+    font-size: 1em;
+    text-decoration: none;
+    margin: 1.2em;
+    color: #fff;
+    position: relative;
+    display: inline-block;
+}
+
+.btn:active {
+    transform: translate(0px, .3em);
+    -webkit-transform: translate(0px, .3em);
+    box-shadow: 0em .1em 0em 0em;
+}
+
+.pink {
+    background-color: #cb2665;
+    box-shadow: 0em .3em 0em 0em #9c0542;
+}
+
+.pink:hover {
+    background-color: #ee3b82;
+}
+
+.footer {
+    color: #fff;
+    margin-top: 40em;
+    font-size: .6em;
+    text-align: center;
+}
+
+ul { padding-left: .1em; }
+
+section #services {
+    text-align: center;
+    transform: translatez(0);
+}
+
+section #services li {
+    width: 4em;
+    height: 5em;
+    display: inline-block;
+    list-style: none;
+    padding-left: 0;
+}
+
+section #services li div {
+    width: 1.5em;
+    height: 1.5em;
+    color: #111;
+    font-size: 2.5em;
+    text-align: center;
+    line-height: 1.5em;
+    background-color: #cb2665;
+    transition: all 0.5s ease;
+}
+
+section #services li div:hover {
+    background-color: #9c0542;
+}
+
+.blink {
+    color: #cb2665;
+    position: relative;
+    right: 1.4em;
+    float: right;
+}
+
+#blink {
+    -webkit-animation-name: blink;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+
+    -moz-animation-name: blink;
+    -moz-animation-duration: 1s;
+    -moz-animation-timing-function: linear;
+    -moz-animation-iteration-count: infinite;
+
+    animation-name: blink;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@-moz-keyframes blink {  
+    0% { opacity: 1.0; }
+    50% { opacity: 1.0; }
+    51% { opacity: 0.0; }
+    100% { opacity: 0.0; }
+}
+
+@-webkit-keyframes blink {  
+    0% { opacity: 1.0; }
+    50% { opacity: 1.0; }
+    51% { opacity: 0.0; }
+    100% { opacity: 0.0; }
+}
+
+@keyframes blink {  
+    0% { opacity: 1.0; }
+    50% { opacity: 1.0; }
+    51% { opacity: 0.0; }
+    100% { opacity: 0.0; }
+}
